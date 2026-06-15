@@ -1,0 +1,50 @@
+project_name: highfive_baculovirus_ha_raman_submission_code
+random_state: 42
+
+data_path: "../../data/inputs/LabelData_time.csv"
+output_root: "../../results"
+
+columns:
+  sample_id: "Unnamed: 0"
+  batch: "Batch"
+  time: "time"
+  date: "Date"
+
+spectral:
+  min_wavenumber: 500
+  max_wavenumber: 1800
+  feature_stride: 2
+  savgol_window: 15
+  savgol_polyorder: 3
+  derivative_order: 1
+  baseline_degree: 3
+
+targets:
+  regular:
+    - VCD
+    - Via
+    - Dim
+    - Glc
+    - Gln
+    - NH4
+  titer:
+    extracellular: HA2
+    total: HA4
+    step_unit: "log2_dilution_step"
+    within_step: 1.0
+
+validation:
+  calibration_batches: [1, 2, 3, 4, 6, 7, 8]
+  independent_test_batch: 5
+  point_level_kfold:
+    n_splits: 5
+    shuffle: true
+    random_state: 42
+    grouping_unit: "offline_sampling_point"
+  preferred_model_selection: "5-fold KFold over offline sampling points on calibration batches"
+  external_test_rule: "Independent test batch is evaluation-only after model locking"
+  min_train_samples: 20
+  pls_components_grid: [1, 3, 5, 8]
+
+plots:
+  dpi: 180
