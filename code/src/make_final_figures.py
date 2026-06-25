@@ -40,6 +40,7 @@ SCANS_PER_OFFLINE_POINT = 5
 TARGETS = ["VCD", "Via", "Dim", "eHA", "tHA", "Glc", "Gln", "NH4"]
 INTERNAL_TARGET = {"eHA": "HA2", "tHA": "HA4"}
 DISPLAY_TARGET = {"HA2": "eHA", "HA4": "tHA"}
+PLOT_TARGET_LABELS = {"NH4": "NH₄⁺"}
 PLSR_COMPONENTS = {"VCD": 8, "Via": 5, "Dim": 8, "HA2": 3, "HA4": 8, "Glc": 3, "Gln": 8, "NH4": 8}
 
 GREY = "#8C8C8C"
@@ -59,6 +60,10 @@ READOUT_TEAL = "#5B9A8E"
 
 def display_target(target: str) -> str:
     return DISPLAY_TARGET.get(str(target), str(target))
+
+
+def plot_target_label(target: str) -> str:
+    return PLOT_TARGET_LABELS.get(str(target), display_target(target))
 
 
 def internal_target(target: str) -> str:
@@ -851,7 +856,7 @@ def make_figure5(label: pd.DataFrame, online_all: pd.DataFrame, ops: pd.DataFram
         ax.axvline(inoc_time, color=INOC_RED, linestyle=":", linewidth=1.0)
         if target in {"eHA", "tHA"}:
             ax.set_xlim(inoc_time, online["time"].max())
-        ax.set_title(f"{target}")
+        ax.set_title(plot_target_label(target))
         ax.set_xlabel("Culture time (h)")
         ax.set_ylabel(ylabels[target])
         style_axis(ax)

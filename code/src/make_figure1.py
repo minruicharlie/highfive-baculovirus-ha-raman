@@ -20,6 +20,7 @@ SRC = ROOT / "results" / "figures" / "source_data"
 OUT = ROOT / "results" / "figures"
 
 TARGET_ORDER = ["VCD", "Via", "Dim", "eHA", "tHA", "Glc", "Gln", "NH4"]
+TARGET_LABELS = {"NH4": "NH₄⁺"}
 FEATURE_ORDER = [
     "bounded/skewed",
     "infection-event linked",
@@ -51,6 +52,10 @@ COLORS = {
 
 def target_color(target: str) -> str:
     return COLORS.get(str(target), "#8C8C8C")
+
+
+def target_label(target: str) -> str:
+    return TARGET_LABELS.get(str(target), str(target))
 
 
 def setup_style() -> None:
@@ -87,7 +92,7 @@ def draw_data_characteristics(ax: plt.Axes, fig: plt.Figure) -> None:
     )
     im = ax.imshow(mat, cmap="YlOrRd", vmin=0, vmax=1, aspect="auto")
     ax.set_xticks(np.arange(len(TARGET_ORDER)))
-    ax.set_xticklabels(TARGET_ORDER, rotation=35, ha="right")
+    ax.set_xticklabels([target_label(t) for t in TARGET_ORDER], rotation=35, ha="right")
     ax.set_yticks(np.arange(len(FEATURE_ORDER)))
     ax.set_yticklabels(FEATURE_LABELS)
     for spine in ax.spines.values():
@@ -117,7 +122,7 @@ def draw_reference_distribution(ax: plt.Axes) -> None:
         )
         ax.scatter(np.full(len(y), i) + rng.uniform(-0.17, 0.17, len(y)), y, s=11, color=color, alpha=0.58, linewidth=0)
     ax.set_xticks(np.arange(len(TARGET_ORDER)))
-    ax.set_xticklabels(TARGET_ORDER, rotation=35, ha="right")
+    ax.set_xticklabels([target_label(t) for t in TARGET_ORDER], rotation=35, ha="right")
     ax.set_ylabel("Reference value / process-variable maximum")
     ax.grid(axis="y", alpha=0.18)
     add_panel_label(ax, "B")
@@ -146,7 +151,7 @@ def draw_event_response(ax: plt.Axes) -> None:
         ax.scatter(np.full(len(vals), i) + rng.uniform(-0.13, 0.13, len(vals)), vals, s=13, facecolor="white", edgecolor="#666666", linewidth=0.55, zorder=3)
     ax.axhline(0, color="#333333", linewidth=0.8)
     ax.set_xticks(x)
-    ax.set_xticklabels(TARGET_ORDER, rotation=35, ha="right")
+    ax.set_xticklabels([target_label(t) for t in TARGET_ORDER], rotation=35, ha="right")
     ax.set_ylabel("Event effect (% observed range)")
     ax.grid(axis="y", alpha=0.18)
     add_panel_label(ax, "C")
@@ -177,7 +182,7 @@ def draw_plsr_diagnostic(ax: plt.Axes) -> None:
             zorder=3,
         )
         dx, dy = label_offsets.get(target, (0.008, 0.8))
-        ax.text(float(row["train_cv_gap"]) + dx, float(row["cv_mape_percent"]) + dy, target, fontsize=9)
+        ax.text(float(row["train_cv_gap"]) + dx, float(row["cv_mape_percent"]) + dy, target_label(target), fontsize=9)
     ax.set_xlabel("PLSR training $R^2$ - CV $R^2$")
     ax.set_ylabel("CV mean absolute percentage error (%)")
     ax.grid(alpha=0.18)
@@ -197,7 +202,7 @@ def draw_reference_residual(ax: plt.Axes, fig: plt.Figure) -> None:
     ax.set_xticks(np.arange(len(REFERENCE_REGION_ORDER)))
     ax.set_xticklabels(REFERENCE_REGION_ORDER)
     ax.set_yticks(np.arange(len(TARGET_ORDER)))
-    ax.set_yticklabels(TARGET_ORDER)
+    ax.set_yticklabels([target_label(t) for t in TARGET_ORDER])
     ax.set_xlabel("Reference-value region")
     for i, target in enumerate(TARGET_ORDER):
         for j, region in enumerate(REFERENCE_REGION_ORDER):
@@ -227,7 +232,7 @@ def draw_stage_residual(ax: plt.Axes, fig: plt.Figure) -> None:
     ax.set_xticks(np.arange(len(STAGE_ORDER)))
     ax.set_xticklabels(STAGE_ORDER)
     ax.set_yticks(np.arange(len(TARGET_ORDER)))
-    ax.set_yticklabels(TARGET_ORDER)
+    ax.set_yticklabels([target_label(t) for t in TARGET_ORDER])
     ax.set_xlabel("Inoculation-aligned stage")
     for i, target in enumerate(TARGET_ORDER):
         for j, stage in enumerate(STAGE_ORDER):
