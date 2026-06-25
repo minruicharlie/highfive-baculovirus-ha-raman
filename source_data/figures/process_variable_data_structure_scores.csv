@@ -1,0 +1,41 @@
+﻿feature,target,target_display,score
+bounded/skewed,Dim,Dim,0.3889586031643477
+infection-event linked,Dim,Dim,0.7291666666666674
+log2/exponential readout,Dim,Dim,0.0
+low-resolution/discrete,Dim,Dim,0.10989010989010994
+narrow dynamic span,Dim,Dim,0.95
+bounded/skewed,Glc,Glc,0.06998803444556279
+infection-event linked,Glc,Glc,0.6894699140401146
+log2/exponential readout,Glc,Glc,0.0
+low-resolution/discrete,Glc,Glc,0.04477611940298509
+narrow dynamic span,Glc,Glc,0.0
+bounded/skewed,Gln,Gln,0.18825467972882115
+infection-event linked,Gln,Gln,0.710204490777867
+log2/exponential readout,Gln,Gln,0.0
+low-resolution/discrete,Gln,Gln,0.05970149253731338
+narrow dynamic span,Gln,Gln,0.0
+bounded/skewed,HA2,eHA,0.017535287859070593
+infection-event linked,HA2,eHA,0.9375
+log2/exponential readout,HA2,eHA,1.0
+low-resolution/discrete,HA2,eHA,0.9
+narrow dynamic span,HA2,eHA,0.0
+bounded/skewed,HA4,tHA,0.40908879039898605
+infection-event linked,HA4,tHA,1.0
+log2/exponential readout,HA4,tHA,1.0
+low-resolution/discrete,HA4,tHA,0.9
+narrow dynamic span,HA4,tHA,0.0
+bounded/skewed,NH4,NH4,0.19314382236689828
+infection-event linked,NH4,NH4,0.5137108262108262
+log2/exponential readout,NH4,NH4,0.0
+low-resolution/discrete,NH4,NH4,0.11940298507462688
+narrow dynamic span,NH4,NH4,0.0
+bounded/skewed,VCD,VCD,0.23132454643324868
+infection-event linked,VCD,VCD,0.34899953466728706
+log2/exponential readout,VCD,VCD,0.0
+low-resolution/discrete,VCD,VCD,0.06593406593406592
+narrow dynamic span,VCD,VCD,0.0
+bounded/skewed,Via,Via,0.95
+infection-event linked,Via,Via,0.9752202643171808
+log2/exponential readout,Via,Via,0.0
+low-resolution/discrete,Via,Via,0.03296703296703296
+narrow dynamic span,Via,Via,0.03393978082774762

@@ -1,0 +1,6 @@
+Broad Raman region (cm⁻¹),n wavenumbers,Pre mean SNV,0–48 h mean SNV,48–96 h mean SNV,>96 h mean SNV,Late-pre delta,Largest stage shift,Late-pre effect size d,Strongest descriptive endpoint association
+850–950,101,-0.0819,-0.0474,-0.1264,-0.153,-0.0711,>96 h (-0.071),-1.0216,Gln: Spearman r=+0.66 (n=400 matched rows)
+1000–1030,31,-0.4318,-0.4255,-0.4293,-0.4399,-0.0081,>96 h (-0.008),-0.2329,VCD: Spearman r=+0.22 (n=520 matched rows)
+1250–1350,101,-0.1079,-0.1203,-0.0647,-0.0621,0.0458,>96 h (+0.046),1.2995,Gln: Spearman r=-0.72 (n=400 matched rows)
+1440–1460,21,0.2814,0.3534,0.3699,0.4359,0.1544,>96 h (+0.154),1.7129,HA4/tHA: Spearman r=+0.56 (n=315 matched rows)
+1650–1680,31,1.7175,1.775,1.6842,1.6136,-0.1038,>96 h (-0.104),-0.5972,HA2/eHA: Spearman r=-0.55 (n=305 matched rows)

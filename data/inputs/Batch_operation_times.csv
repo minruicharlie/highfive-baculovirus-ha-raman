@@ -1,0 +1,9 @@
+Batch,process_group,inoculation_time_h,dilution_time_h,MOI,record_source,comment
+1,inoculation_at_vcd_drop,97.88,,0.05,user_corrected_operation_time,inoculation assigned to the final VCD-drop/passaging point; passage records removed
+2,culture_infection,22.33,,0.05,user_corrected_operation_time,inoculation assigned to the approximately 20 h VCD point
+3,inoculation_at_vcd_drop,25.85,,0.10,user_corrected_operation_time,inoculation assigned to the VCD-drop/passaging point; passage records removed
+4,inoculation_at_vcd_drop,96.72,,0.05,user_corrected_operation_time,inoculation assigned to the final VCD-drop/passaging point; passage records removed
+5,inoculation_at_vcd_drop,46.00,,0.50,user_corrected_operation_time,inoculation assigned to the VCD-drop/passaging point; passage records removed
+6,dilution_inoculation,54.40,54.40,0.50,user_corrected_operation_time,dilution and virus inoculation occurred synchronously
+7,direct_infection,0.00,,0.50,user_corrected_operation_time,direct virus inoculation at culture start
+8,direct_infection,0.00,,0.50,user_corrected_operation_time,direct virus inoculation at culture start

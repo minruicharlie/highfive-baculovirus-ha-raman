@@ -1,0 +1,8 @@
+﻿Target,Raman window,Spectral preprocessing,Response scale,Feature representation,Model head,Hyperparameters,Process-time descriptors,Selection metric
+VCD,500-1800 cm^-1,baseline + SG d1 + standardization,identity,full Raman PLSR,PLSR,"n_components in [1, 3, 5, 8]; selected n=8",No,CV RMSE
+Glc,500-1800 cm^-1,baseline + SG d1 + standardization,identity,full Raman PLSR,PLSR,"n_components in [1, 3, 5, 8]; selected n=3",No,CV RMSE
+Gln,500-1800 cm^-1,baseline + SG d1 + standardization,identity,full Raman PLSR,PLSR,"n_components in [1, 3, 5, 8]; selected n=8",No,CV RMSE
+NH4,500-1800 cm^-1,baseline + SG d1 + standardization,identity,full Raman PLSR,PLSR,"n_components in [1, 3, 5, 8]; selected n=8",No,CV RMSE
+Via,500-1800 cm^-1,baseline + SG d1 + standardization,bounded logit,SelectKBest k=80,SVR,"C=10, gamma=scale, epsilon=0.05",Yes,CV RMSE
+Dim,500-1800 cm^-1,baseline + SG d1 + standardization,"logit-range, 15.0-20.5 um",SelectKBest k=360,SVR,"C=10, gamma=scale, epsilon=0.01",Yes,CV RMSE
+eHA/tHA,500-1800 cm^-1,first15 delta + baseline + SG d0 + standardization,log2 dilution step,PLS latent scores,ordinal-threshold probability,"firstN=15; PLS n in [6, 8, 10]; C in [0.3, 1.0, 3.0]; process weight in [0.25, 0.5, 1.0] where applicable",Route-dependent,tolerance-aware loss

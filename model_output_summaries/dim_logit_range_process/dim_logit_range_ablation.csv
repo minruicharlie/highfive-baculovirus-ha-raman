@@ -1,0 +1,6 @@
+﻿target,step,model,response_layer,features,candidate,process_time,cv_n,cv_rmse,cv_mae,cv_bias,cv_r2,independent_n,independent_rmse,independent_mae,independent_bias,independent_r2
+Dim,D1 absolute Raman SelectSVR,SelectSVR,absolute,Raman SelectSVR,Dim_D1_absolute_Raman_SelectSVR_k360_C10_eps0.01,False,91,0.55223,0.39962,-0.018345,0.695016,,,,,
+Dim,D2 logit-range Raman SelectSVR,SelectSVR,logit_range,Raman SelectSVR,Dim_D2_logit_range_Raman_SelectSVR_k360_C10_eps0.01,False,91,0.533378,0.379313,-0.020752,0.715482,,,,,
+Dim,D3 absolute + process-time SelectSVR,SelectSVR,absolute,Raman SelectSVR + process-time,Dim_D3_absolute_process_time_SelectSVR_k360_C10_eps0.01,True,91,0.453259,0.324956,-0.020707,0.794539,,,,,
+Dim,DT logit-range process-time-only SelectSVR,SelectSVR,logit_range,process-time only,Dim_DT_logit_range_process_time_only_SelectSVR_C10_eps0.01,True,91,0.756577,0.530764,-0.102686,0.427541,,,,,
+Dim,D4 logit-range + process-time SelectSVR,SelectSVR,logit_range,Raman SelectSVR + process-time,Dim_D4_logit_range_process_time_SelectSVR_k360_C10_eps0.01,True,91,0.4286,0.30335,-0.016963,0.816286,13.0,0.435173,0.391202,0.223984,0.759635

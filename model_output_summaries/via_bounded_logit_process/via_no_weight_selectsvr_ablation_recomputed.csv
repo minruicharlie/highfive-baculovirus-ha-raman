@@ -1,0 +1,6 @@
+﻿endpoint,step,model,response_layer,features,candidate,weighting,cv_n,cv_rmse,cv_mae,cv_bias,cv_r2,independent_test_n,independent_test_rmse,independent_test_mae,independent_test_bias,independent_test_r2
+Via,V1 identity Raman SelectSVR,SelectSVR,identity,Raman SelectSVR,Via_SelectSVR_k80_identity_none_C10_eps0.05,none,91,7.859403,5.313522,0.306991,0.915195,,,,,
+Via,V2 bounded-logit Raman SelectSVR,SelectSVR,bounded_logit,Raman SelectSVR,Via_SelectSVR_k80_bounded_logit_none_C10_eps0.05,none,91,7.615162,4.857885,0.835478,0.920384,,,,,
+Via,V3 identity + process-time SelectSVR,SelectSVR,identity,Raman SelectSVR + process-time,Via_SelectSVR_k80_identity_none_inoc_time_C10_eps0.05,none,91,5.518351,3.923473,-0.042772,0.958192,,,,,
+Via,VT bounded-logit process-time-only SelectSVR,SelectSVR,bounded_logit,process-time only,Via_SelectSVR_bounded_logit_process_time_only_C10_eps0.05,none,91,6.553624,4.271838,0.026787,0.941034,,,,,
+Via,V4 bounded-logit + process-time SelectSVR,SelectSVR,bounded_logit,Raman SelectSVR + process-time,Via_SelectSVR_k80_bounded_logit_none_inoc_time_C10_eps0.05,none,91,4.812527,3.063811,0.463072,0.968203,13.0,6.648509,5.185177,-5.185177,0.965197

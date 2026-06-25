@@ -9,37 +9,30 @@ Thumbs.db
 venv/
 env/
 
-data/
+# Non-public raw inputs withheld from the public repository.
+data/raw/
 raw/
-inputs/
-outputs/
-results/
-figures/
-tables/
+**/LabelData_time.csv
+**/UnlabelRamanData.csv
+**/*spectral_matrix*
+**/*spectra_matrix*
+**/*RamanData*.csv
 
-*.csv
-*.tsv
-*.xlsx
-*.xls
-*.xlsm
-*.parquet
-*.feather
-*.h5
-*.hdf5
-*.mat
+# Vendor/raw spectral and large binary data formats.
 *.spc
 *.spa
 *.dx
 *.jdx
-*.doc
-*.docx
-*.ppt
-*.pptx
-*.pdf
-*.zip
-*.7z
-*.rar
+*.mat
+*.h5
+*.hdf5
+*.parquet
+*.feather
 
+# Local build and archive artifacts.
 *.log
 *.tmp
 *.bak
+*.zip
+*.7z
+*.rar

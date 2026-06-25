@@ -1,0 +1,3 @@
+Data availability
+
+Raw Raman spectral matrices and paired offline manufacturing/reference records cannot be publicly shared because they contain commercially sensitive process information. All other non-sensitive materials supporting the study, including machine-readable table/figure source data, model-output summaries, clean submission code, method-level pseudocode, and supplementary materials, are provided as accompanying supplementary/source-data files and at the project repository: https://github.com/minruicharlie/highfive-baculovirus-ha-raman-pseudocode.

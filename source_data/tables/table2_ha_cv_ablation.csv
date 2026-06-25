@@ -1,0 +1,13 @@
+﻿Target,Route,Module,CV n,CV tolerance loss,CV RMSE,CV MAE,CV bias,CV rounded ±1 (%)
+eHA,B0,Model baseline,49.0,1.2602,1.7811,1.4319,-0.1335,57.1429
+eHA,T0,process-time-only + HA-aware readout,46.0,1.2196,1.757,1.4348,-0.1304,63.0435
+eHA,P0,Probability baseline,46.0,0.2293,1.0346,0.8304,-0.1348,89.1304
+eHA,P1,P0 + process-time descriptors,46.0,0.1815,0.9943,0.813,-0.2304,86.9565
+eHA,H1,P0 + HA-aware readout,46.0,0.2239,1.0,0.6957,-0.2174,89.1304
+eHA,H2,P0 + process-time + HA-aware readout,46.0,0.1587,1.0,0.7826,-0.2174,89.1304
+tHA,B0,Model baseline,55.0,0.9255,1.4998,1.2021,0.0086,65.4545
+tHA,T0,process-time-only + HA-aware readout,50.0,2.78,2.2804,1.76,-0.56,52.0
+tHA,P0,Probability baseline,50.0,0.328,1.1132,0.876,-0.204,80.0
+tHA,P1,P0 + process-time descriptors,50.0,0.237,1.0233,0.748,-0.14,82.0
+tHA,H1,P0 + HA-aware readout,50.0,0.328,1.1662,0.88,-0.24,80.0
+tHA,H2,P0 + process-time + HA-aware readout,50.0,0.234,1.0392,0.72,-0.16,82.0

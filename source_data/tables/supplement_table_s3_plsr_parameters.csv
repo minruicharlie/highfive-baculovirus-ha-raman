@@ -1,0 +1,9 @@
+Target,Raman window,Preprocessing,Response scale,PLSR components,Selection criterion
+VCD,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,8.0,Calibration-set 5-fold CV RMSE
+Via,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,5.0,Calibration-set 5-fold CV RMSE
+Dim,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,8.0,Calibration-set 5-fold CV RMSE
+eHA,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,log2 dilution step; positive labels only,3.0,Calibration-set 5-fold CV RMSE
+tHA,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,log2 dilution step; positive labels only,8.0,Calibration-set 5-fold CV RMSE
+Glc,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,3.0,Calibration-set 5-fold CV RMSE
+Gln,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,8.0,Calibration-set 5-fold CV RMSE
+NH4,500-1800 cm^-1,baseline + SG d1 + standardization; median imputation in model pipeline,identity,8.0,Calibration-set 5-fold CV RMSE

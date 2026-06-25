@@ -1,0 +1,13 @@
+﻿Target,Step,Module,CV n,CV RMSE,CV R²
+Via,V0 PLSR common baseline,Full Raman PLSR,91.0,9.0144,0.8884
+Via,V1 identity Raman SelectSVR,Raman SelectSVR,91.0,7.8594,0.9152
+Via,V2 bounded-logit Raman SelectSVR,Raman SelectSVR,91.0,7.6152,0.9204
+Via,V3 identity + process-time SelectSVR,Raman SelectSVR + process-time,91.0,5.5184,0.9582
+Via,VT bounded-logit process-time-only SelectSVR,process-time only,91.0,6.5536,0.941
+Via,V4 bounded-logit + process-time SelectSVR,Raman SelectSVR + process-time,91.0,4.8125,0.9682
+Dim,D0 PLSR common baseline,Full Raman PLSR,91.0,0.6238,0.6109
+Dim,D1 absolute Raman SelectSVR,Raman SelectSVR,91.0,0.5522,0.695
+Dim,D2 logit-range Raman SelectSVR,Raman SelectSVR,91.0,0.5334,0.7155
+Dim,D3 absolute + process-time SelectSVR,Raman SelectSVR + process-time,91.0,0.4533,0.7945
+Dim,DT logit-range process-time-only SelectSVR,process-time only,91.0,0.7566,0.4275
+Dim,D4 logit-range + process-time SelectSVR,Raman SelectSVR + process-time,91.0,0.4286,0.8163

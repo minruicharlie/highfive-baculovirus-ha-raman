@@ -1,0 +1,10 @@
+﻿Batch,Role,Full online Raman spectra,Matched spectra rows (VCD/Via/Dim),Matched spectra rows (Glc/Gln/NH4),Matched spectra rows (eHA positive),Matched spectra rows (tHA positive),Offline points (VCD/Via/Dim),Offline points (Glc/Gln/NH4),Positive offline points (eHA),Positive offline points (tHA)
+Batch1,Calibration,1573.0,110.0,110.0,40.0,40.0,22.0,22.0,8.0,8.0
+Batch2,Calibration,854.0,50.0,50.0,35.0,40.0,10.0,10.0,7.0,8.0
+Batch3,Calibration,1002.0,55.0,45.0,30.0,35.0,11.0,9.0,6.0,7.0
+Batch4,Calibration,1433.0,85.0,0.0,35.0,40.0,17.0,0.0,7.0,8.0
+Independent test,Independent test,1549.0,65.0,65.0,40.0,40.0,13.0,13.0,8.0,8.0
+Batch6,Calibration,996.0,65.0,50.0,30.0,40.0,13.0,10.0,6.0,8.0
+Batch7,Calibration,848.0,45.0,35.0,35.0,40.0,9.0,7.0,7.0,8.0
+Batch8,Calibration,844.0,45.0,45.0,40.0,40.0,9.0,9.0,8.0,8.0
+Total,All batches,9099.0,520.0,400.0,285.0,315.0,104.0,80.0,57.0,63.0
